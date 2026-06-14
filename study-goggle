@@ -1,0 +1,550 @@
+! name: 🧠 Neurociencia Para Estudiar | Neuroscience Learning Hub
+! description: Study-oriented goggle for neuroscience, neuroanatomy, neurophysiology and neuropsychology. Boosts free textbooks, open university courses, medical education platforms, interactive atlases, peer-reviewed encyclopedias, and pedagogical tools. Downranks raw research, preprints, and consumer health content. Ideal for undergrad, graduate, and health-sciences students.
+! public: true
+! author: WilmerCM
+! avatar: #1A6B8A
+! license: https://creativecommons.org/licenses/by/4.0/deed.en
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 1 — ORO PEDAGÓGICO: Libros de Texto Libres Completos  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Estos son los recursos más valiosos para el estudio: libros de texto
+! completos, gratuitos, escritos por expertos, con contenido consolidado.
+
+! Neuroscience Online (UTHealth McGovern) — EL MEJOR recurso libre
+! Libro de texto completo en línea: 50 capítulos de neurobiología molecular,
+! funciones sensoriales, motoras y funciones cerebrales superiores.
+$boost=10,site=nba.uth.tmc.edu
+
+! OpenStax — Libros de texto universitarios gratuitos revisados por pares
+! Incluye Anatomy & Physiology (neuroanatomía), Biology, Psychology
+$boost=10,site=openstax.org
+
+! LibreTexts Biology — Neurobiología y neurociencia (OER adaptable)
+$boost=10,site=bio.libretexts.org
+
+! LibreTexts Medicine — Contenido de neurología y neurociencia clínica
+$boost=10,site=med.libretexts.org
+
+! LibreTexts Psychology — Neuropsicología y bases biológicas del comportamiento
+$boost=10,site=socialsci.libretexts.org
+
+! LibreTexts — Plataforma general (cubre múltiples disciplinas)
+$boost=9,site=libretexts.org
+
+! NCBI Bookshelf — Biblioteca de libros de texto médicos gratuitos
+! Incluye StatPearls (neurología clínica), Gray's Anatomy, y más
+|https://www.ncbi.nlm.nih.gov/books^$boost=10
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 2 — ATLAS INTERACTIVOS Y HERRAMIENTAS VISUALES  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! La neuroanatomía y la neurofisiología son disciplinas visuales.
+! Estos recursos proporcionan la mejor experiencia visual interactiva.
+
+! TeachMeAnatomy — Neuroanatomía clínica excelente, artículos + ilustraciones
+! Cubre cerebro, médula espinal, nervios craneales, vías neurales, patología
+$boost=10,site=teachmeanatomy.info
+
+! The Brain from Top to Bottom (McGill University) — Bilingüe EN/FR
+! Organizado por nivel (básico→avanzado) y eje temático (cerebro→social)
+$boost=10,site=thebrain.mcgill.ca
+
+! BrainFacts.org — Portal de educación pública de la Society for Neuroscience
+! Artículos accesibles escritos por neurocientíficos. Multimodal.
+$boost=10,site=brainfacts.org
+
+! Kenhub — Atlas interactivo de anatomía con videos, quizzes y artículos
+! Sección de neuroanatomía muy completa con imágenes histológicas y clínicas
+$boost=9,site=kenhub.com
+
+! AnatomyZone — Tutoriales 3D interactivos de neuroanatomía (video)
+! Cubre cerebro, médula espinal, nervios craneales y sistema autónomo
+$boost=9,site=anatomyzone.com
+
+! GetBodySmart — Módulos interactivos de anatomía y fisiología
+! Neuronas, sinapsis, sistema nervioso central y periférico animados
+$boost=9,site=getbodysmart.com
+
+! IMAIOS e-Anatomy — Atlas interactivo de neuroanatomía de alta calidad
+! Imágenes radiológicas + disección virtual + módulos interactivos
+$boost=9,site=imaios.com
+$boost=9,site=e-anatomy.org
+
+! HHMI BioInteractive — Animaciones y materiales educativos de biología
+! Recursos de calidad universitaria sobre neurociencia celular y molecular
+$boost=9,site=biointeractive.org
+
+! Visible Body — Atlas 3D del cuerpo humano con sistema nervioso
+$boost=7,site=visiblebody.com
+
+! InnerBody — Anatomía interactiva visual para el estudio
+$boost=7,site=innerbody.com
+
+! Human Anatomy Atlas / BioDigital Human — Visualización 3D
+$boost=7,site=human.biodigital.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 3 — PLATAFORMAS EDUCATIVAS Y MOOCs  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Cursos universitarios en línea: el mejor sustituto de una aula
+! cuando no se tiene acceso a una universidad presencial.
+
+! MIT OpenCourseWare — Cursos del MIT, materiales completos y gratuitos
+! Incluye 9.01 Neuroscience, 9.07 Statistics, 9.13 Biology of Learning
+|https://ocw.mit.edu/*neuro*$boost=10
+|https://ocw.mit.edu/*brain*$boost=10
+|https://ocw.mit.edu/*9.0*$boost=9
+$boost=6,site=ocw.mit.edu
+
+! Coursera — MOOCs de universidades de élite en neurociencia
+! Cursos de Duke (Medical Neuroscience), Wesleyan (Everyday), etc.
+|https://www.coursera.org/*neuroscience*$boost=9
+|https://www.coursera.org/*neuroanatomy*$boost=9
+|https://www.coursera.org/*neuro*$boost=9
+$boost=7,site=coursera.org
+
+! edX — Cursos universitarios abiertos de neurociencia
+! MIT, Harvard, UCSanDiego y otros ofrecen cursos de alta calidad
+|https://www.edx.org/*neuroscience*$boost=9
+|https://www.edx.org/*neuro*$boost=9
+$boost=7,site=edx.org
+
+! Nature Scitable — Plataforma educativa gratuita de Nature Publishing
+! Artículos de revisión pedagógica sobre neurociencia, genética, biología
+$boost=9,site=scitable.nature.com
+
+! FutureLearn — MOOCs de universidades europeas (mucho contenido de neuro)
+|https://www.futurelearn.com/*neuroscience*$boost=8
+|https://www.futurelearn.com/*brain*$boost=8
+$boost=6,site=futurelearn.com
+
+! Neuromatch Academy — Curso intensivo gratuito de neurociencia computacional
+! Computación neuronal, análisis de señales, modelos de sistemas
+$boost=8,site=neuromatch.io
+
+! Khan Academy — Biología, sistema nervioso, células y bases de la conducta
+|https://www.khanacademy.org/science/biology^$boost=9
+|https://www.khanacademy.org/science/health-and-medicine^$boost=9
+|https://www.khanacademy.org/science/ap-biology^$boost=8
+$boost=6,site=khanacademy.org
+
+! Brilliant.org — Aprendizaje interactivo de neurociencia computacional y STEM
+$boost=7,site=brilliant.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 4 — ENCICLOPEDIAS CIENTÍFICAS REVISADAS POR PARES  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Conocimiento consolidado, síntesis académica, definiciones rigurosas.
+! Mejor que Wikipedia para contenido técnico profundo.
+
+! Scholarpedia — Wikipedia científica con revisión por pares de expertos
+! Artículos de neurociencia escritos y revisados por los investigadores
+! que originalmente describieron el concepto (Kandel, Koch, etc.)
+$boost=9,site=scholarpedia.org
+
+! Wikipedia — Rutas específicas de neurociencia con boost elevado
+! Los artículos de neuro en Wikipedia suelen ser muy completos
+|https://en.wikipedia.org/wiki/Portal:Neuroscience^$boost=8
+|https://en.wikipedia.org/wiki/Neuroscience^$boost=8
+|https://en.wikipedia.org/wiki/Neuroanatomy^$boost=8
+|https://en.wikipedia.org/wiki/Neurophysiology^$boost=8
+|https://en.wikipedia.org/wiki/Neuropsychology^$boost=8
+|https://en.wikipedia.org/wiki/Cognitive_neuroscience^$boost=7
+|https://en.wikipedia.org/wiki/Computational_neuroscience^$boost=7
+|https://en.wikipedia.org/wiki/Behavioral_neuroscience^$boost=7
+|https://en.wikipedia.org/wiki/Developmental_neuroscience^$boost=7
+|https://en.wikipedia.org/wiki/Molecular_neuroscience^$boost=7
+|https://en.wikipedia.org/wiki/Cellular_neuroscience^$boost=7
+|https://en.wikipedia.org/wiki/Systems_neuroscience^$boost=7
+|https://en.wikipedia.org/wiki/Clinical_neuropsychology^$boost=7
+|https://en.wikipedia.org/wiki/Neuroplasticity^$boost=7
+|https://en.wikipedia.org/wiki/Action_potential^$boost=7
+|https://en.wikipedia.org/wiki/Synapse^$boost=7
+|https://en.wikipedia.org/wiki/Cerebral_cortex^$boost=7
+|https://en.wikipedia.org/wiki/Hippocampus^$boost=7
+|https://en.wikipedia.org/wiki/Cerebellum^$boost=7
+|https://en.wikipedia.org/wiki/Basal_ganglia^$boost=7
+|https://en.wikipedia.org/wiki/Neurotransmitter^$boost=7
+$boost=4,site=en.wikipedia.org
+
+! Wikibooks — Libros de texto en wiki sobre neuroanatomía y neurofisiología
+|https://en.wikibooks.org/wiki/Neuroanatomy^$boost=7
+|https://en.wikibooks.org/wiki/Neuroscience^$boost=7
+$boost=5,site=en.wikibooks.org
+
+! Encyclopedia Britannica — Artículos de referencia de alta calidad
+|https://www.britannica.com/science/neuroscience^$boost=7
+|https://www.britannica.com/science/neuroanatomy^$boost=7
+|https://www.britannica.com/science/nervous-system^$boost=7
+$boost=5,site=britannica.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 5 — EDUCACIÓN MÉDICA Y CIENCIAS DE LA SALUD  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Plataformas diseñadas para estudiantes de medicina, enfermería,
+! fisioterapia, psicología clínica y neuropsicología.
+
+! Osmosis — Videos y notas pedagógicas de alta calidad para ciencias de la salud
+! Neurología clínica, neuroanatomía y neuropatología bien explicadas
+$boost=9,site=osmosis.org
+
+! AMBOSS — Plataforma de conocimiento médico y banco de preguntas
+! Excelente para integrar neuroanatomía + clínica + fisiopatología
+$boost=8,site=amboss.com
+
+! TeachMeNeurology — Neurología clínica estructurada por temas
+! Nervios craneales, trastornos del movimiento, ACV, enfermedad de Parkinson
+$boost=8,site=teachmeneurology.info
+
+! TeachMePhysiology — Neurofisiología y fisiología del sistema nervioso
+$boost=8,site=teachmephysiology.com
+
+! TeachMeSeries — Portal central de toda la serie TeachMe
+$boost=8,site=teachmeseries.com
+
+! Lecturio — Plataforma de educación médica con video-conferencias
+! Neuroanatomía, neurofisiología y neurología explicadas por profesores
+$boost=8,site=lecturio.com
+
+! Medbullets — Repaso para boards médicos con contenido neurológico
+! Neuroanatomía clínica, neurología + neuropsiquiatría para USMLE/otros
+$boost=7,site=medbullets.com
+
+! Radiopaedia — Atlas de neuroimagen y casos clínicos educativos
+! Indispensable para aprender neuroanatomía por imagen (MRI, TC, PET)
+$boost=9,site=radiopaedia.org
+
+! MedLink Neurology — Recursos educativos especializados para neurología
+$boost=7,site=medlink.com
+
+! MedlinePlus (NIH) — Información de salud de calidad para el aprendizaje
+! Neurología, neuroanatomía y enfermedades del sistema nervioso
+$boost=7,site=medlineplus.gov
+
+! Merck Manual (MSD Manuals) — Referencia médica de alta calidad
+! Capítulos completos sobre neurología y neuropsicología clínica
+$boost=7,site=msdmanuals.com
+
+! Medscape — Referencia y educación médica continua
+! Artículos educativos sobre neurología, neurofisiología, neuropsiquiatría
+$boost=7,site=medscape.com
+$boost=8,site=emedicine.medscape.com
+
+! Merck Manual Professional — Versión profesional de referencia
+$boost=7,site=merckmanuals.com
+
+! UpToDate — Referencia clínica basada en evidencia (nivel expert)
+! Si acceso disponible: excelente síntesis de neurología clínica
+$boost=7,site=uptodate.com
+
+! Acland's Video Atlas of Human Anatomy — Video anatomía clásica
+$boost=7,site=aclandanatomy.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 6 — NEUROANATOMÍA UNIVERSITARIA ESPECÍFICA  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Recursos de departamentos universitarios orientados a la enseñanza.
+
+! Neuroscience for Kids (Univ. Washington / Eric Chudler)
+! Aunque el nombre sugiere material básico, cubre conceptos avanzados
+$boost=7,site=faculty.washington.edu
+
+! Dana Foundation — Educación pública sobre neurociencia de alta calidad
+$boost=7,site=dana.org
+
+! Allen Brain Atlas (para aprendizaje, no solo investigación)
+! Excelente para neuroanatomía visual interactiva
+$boost=7,site=brain-map.org
+
+! Knowing Neurons — Blog educativo escrito por neurocientíficos expertos
+! Artículos bien escritos, accesibles y científicamente rigurosos
+$boost=7,site=knowingneurons.com
+
+! BrainFacts — Ya listado arriba, boost extra para refuerzo
+$boost=10,site=brainfacts.org
+
+! NeuroPedia — Glosario y explicaciones de términos neurológicos
+$boost=6,site=neuropedia.org
+
+! Neuroscience News — Noticias y divulgación con trasfondo pedagógico
+$boost=6,site=neurosciencenews.com
+
+! Quanta Magazine — Divulgación rigurosa de neurociencia y biología
+|https://www.quantamagazine.org/*neuroscience*$boost=7
+|https://www.quantamagazine.org/*brain*$boost=7
+|https://www.quantamagazine.org/*neural*$boost=7
+$boost=5,site=quantamagazine.org
+
+! Scientific American — Mind & Brain — Divulgación científica de calidad
+|https://www.scientificamerican.com/neuroscience^$boost=7
+|https://www.scientificamerican.com/mind^$boost=7
+$boost=5,site=scientificamerican.com
+
+! TED / TED-Ed — Charlas de neurocientíficos para el aprendizaje
+|https://www.ted.com/topics/neuroscience^$boost=7
+|https://www.ted.com/topics/brain^$boost=7
+$boost=5,site=ted.com
+$boost=6,site=ed.ted.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 7 — HERRAMIENTAS DE ESTUDIO Y MEMORIZACIÓN  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Tarjetas, quizzes, repaso activo. El aprendizaje activo supera
+! a la lectura pasiva en retención a largo plazo.
+
+! Anki — El mejor sistema de repetición espaciada del mundo
+! Mazos de neurociencia, neuroanatomía y neuropsicología disponibles
+$boost=7,site=ankiweb.net
+
+! Quizlet — Flashcards y juegos de estudio por temas de neurociencia
+$boost=7,site=quizlet.com
+
+! Brainscape — Flashcards con repetición espaciada adaptativa
+$boost=6,site=brainscape.com
+
+! Osmosis (flashcards + video) — Ya listado arriba, boost adicional
+$boost=9,site=osmosis.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 8 — RECURSOS EN ESPAÑOL Y MULTILINGUES  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Recursos pedagógicos de alta calidad en español y otras lenguas.
+! La neurociencia no es patrimonio exclusivo del inglés.
+
+! Neurowikia — Wiki de neurología clínica en español (revisada por expertos)
+! Sociedad Española de Neurología + hospitales españoles
+$boost=9,site=neurowikia.com
+
+! Revista de Neurología — Recursos educativos y casos clínicos en español
+! Artículos de revisión y formación continuada
+$boost=8,site=neurologia.com
+
+! Sociedad Española de Neurología — Materiales educativos y guías
+$boost=8,site=sen.es
+
+! SciELO — Artículos de revisión y educación médica en español/portugués
+$boost=7,site=scielo.org
+$boost=7,site=scielo.cl
+$boost=7,site=scielo.br
+$boost=7,site=scielo.org.mx
+$boost=6,site=scielo.org.co
+
+! Intramed — Educación médica continua hispanoamericana (Argentina)
+! Artículos de revisión y casos clínicos en neurología y neuropsicología
+$boost=7,site=intramed.net
+
+! Kenhub en español — Plataforma de anatomía con contenido en español
+|https://www.kenhub.com/es^$boost=9
+
+! Elsevier España — Libros de texto médicos y recursos en español
+$boost=6,site=elsevier.es
+
+! Medigraphic — Literatura médica hispanoamericana peer-reviewed
+$boost=6,site=medigraphic.com
+
+! Anatomia Online — Recursos de anatomía en español
+$boost=6,site=anatomiaonline.com
+
+! Educación Médica (Elsevier España) — Pedagogía en ciencias de la salud
+$boost=6,site=educacionmedica.net
+
+! FEPAMM / Neurología Latinoamérica
+$boost=6,site=alan-neuro.org
+
+! Universidad de Navarra — Departamento de Neurociencias (recursos ESP)
+$boost=6,site=unav.edu
+
+! Medigraphic Neurología — Literatura médica neurológica en español
+|https://www.medigraphic.com/cgi-bin/new/resumenI.cgi*$boost=7
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 9 — RECURSOS INSTITUCIONALES CON CONTENIDO EDUCATIVO  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Páginas de instituciones y organizaciones con secciones pedagógicas.
+! Se boostan sus secciones educativas específicas.
+
+! NIH — Secciones educativas y de salud pública
+$boost=7,site=ninds.nih.gov
+$boost=6,site=nimh.nih.gov
+$boost=6,site=nih.gov
+
+! Society for Neuroscience — Educación y divulgación
+|https://www.sfn.org/education^$boost=7
+|https://www.sfn.org/outreach^$boost=7
+$boost=6,site=sfn.org
+
+! American Academy of Neurology — Guías y educación médica
+|https://www.aan.com/education^$boost=7
+|https://www.aan.com/guidelines^$boost=7
+$boost=5,site=aan.com
+
+! BrainFacts.org — La fuente pública de la SfN (ya listada, refuerzo)
+$boost=10,site=brainfacts.org
+
+! HHMI BioInteractive — Recursos didácticos universitarios (ya listado)
+$boost=9,site=biointeractive.org
+
+! Dana Foundation — Educación pública sobre neurociencia
+$boost=7,site=dana.org
+
+! Annual Reviews (solo artículos de revisión = pedagógicos)
+|https://www.annualreviews.org/journal/neuro^$boost=7
+$boost=5,site=annualreviews.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 10 — NEUROPSICOLOGÍA CLÍNICA: RECURSOS ESPECÍFICOS  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Recursos especializados en el estudio de la neuropsicología clínica,
+! evaluación neuropsicológica, rehabilitación y fundamentos teóricos.
+
+! APA PsycNet — Base de datos de psicología con secciones pedagógicas
+! Útil para neuropsicología y psicología biológica
+$boost=7,site=psycnet.apa.org
+
+! APA — Asociación Americana de Psicología
+$boost=6,site=apa.org
+
+! National Academy of Neuropsychology — Educación y guías profesionales
+$boost=7,site=nanonline.org
+
+! International Neuropsychological Society — Recursos educativos
+$boost=7,site=the-ins.org
+
+! Neuropsychology Central — Recursos para el estudio neuropsicológico
+$boost=6,site=neuropsychologycentral.com
+
+! Association for Psychological Science
+$boost=6,site=psychologicalscience.org
+
+! Psychology Today (neuropsicología divulgativa, uso moderado)
+$boost=4,site=psychologytoday.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 11 — NEUROFISIOLOGÍA: RECURSOS ESPECÍFICOS  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Recursos especializados para el estudio de neurofisiología,
+! electrofisiología y fisiología del sistema nervioso.
+
+! American Physiological Society — Educación y recursos de fisiología
+$boost=7,site=physiology.org
+
+! PhysioNet — Señales fisiológicas educativas y bases de datos de aprendizaje
+$boost=7,site=physionet.org
+
+! The Physiology Society (UK) — Recursos educativos de fisiología
+$boost=7,site=physoc.org
+
+! Virtual Physiology — Simuladores de fisiología para el aprendizaje
+$boost=7,site=virtual-physiology.com
+
+! GetBodySmart — Neuronas, sinapsis, potenciales de acción (animaciones)
+! Ya listado arriba, boost específico de refuerzo
+$boost=9,site=getbodysmart.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 12 — DIVULGACIÓN Y PODCASTS CON RIGOR CIENTÍFICO  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Fuentes de divulgación que van más allá del periodismo superficial
+! y aportan profundidad científica sin requerir acceso a papers.
+
+! Knowing Neurons — Blog neurocientífico por estudiantes de posgrado UCLA
+$boost=7,site=knowingneurons.com
+
+! The Scientist — Revista de divulgación científica rigurosa
+$boost=6,site=the-scientist.com
+
+! Spectrum News (Simons Foundation) — Neurociencia del autismo y desarrollo
+$boost=6,site=spectrumnews.org
+
+! Discover Magazine — Neurociencia (sección brain and behavior)
+|https://www.discovermagazine.com/mind^$boost=6
+$boost=4,site=discovermagazine.com
+
+! Brainfacts News — Noticias con base neurocientífica de la SfN
+$boost=7,site=brainfacts.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  DOWNRANK — INVESTIGACIÓN PRIMARIA (Menos útil para estudiar)  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! El estudio parte del conocimiento consolidado, no de papers crudos.
+! Estas fuentes son valiosas para investigadores, NO para estudiantes
+! que necesitan entender conceptos fundamentales.
+!
+! Se downrankean (no se descartan) porque a veces pueden ser útiles
+! para referencias, pero no deben dominar los resultados de estudio.
+
+! Bases de datos de investigación primaria
+$downrank=4,site=pubmed.ncbi.nlm.nih.gov
+$downrank=5,site=biorxiv.org
+$downrank=5,site=medrxiv.org
+$downrank=5,site=europepmc.org
+
+! Repositorios de datos crudos (no pedagógicos)
+$downrank=5,site=openneuro.org
+$downrank=5,site=neurovault.org
+$downrank=4,site=nitrc.org
+$downrank=4,site=neuromorpho.org
+
+! Revistas de investigación primaria (papers, no textbooks)
+$downrank=3,site=jneurosci.org
+$downrank=3,site=frontiersin.org
+$downrank=3,site=elifesciences.org
+$downrank=3,site=sciencedirect.com
+$downrank=3,site=onlinelibrary.wiley.com
+$downrank=3,site=link.springer.com
+$downrank=3,site=academic.oup.com
+$downrank=3,site=tandfonline.com
+
+! Redes académicas (papers, no pedagógico)
+$downrank=3,site=researchgate.net
+$downrank=3,site=academia.edu
+$downrank=3,site=semanticscholar.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  DOWNRANK — SALUD PARA CONSUMIDORES / BAJO VALOR ACADÉMICO  ████
+! ════════════════════════════════════════════════════════════════════════
+
+$downrank=5,site=webmd.com
+$downrank=5,site=healthline.com
+$downrank=5,site=medicalnewstoday.com
+$downrank=4,site=everydayhealth.com
+$downrank=4,site=verywell.com
+$downrank=4,site=verywellmind.com
+$downrank=4,site=verywellhealth.com
+$downrank=5,site=livestrong.com
+$downrank=5,site=mindbodygreen.com
+$downrank=4,site=drweil.com
+$downrank=4,site=naturalhealth365.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  DISCARD — IRRELEVANTES / RUIDO / REDES SOCIALES  ████
+! ════════════════════════════════════════════════════════════════════════
+
+$discard,site=pinterest.com
+$discard,site=pinterest.es
+$discard,site=instagram.com
+$discard,site=facebook.com
+$discard,site=twitter.com
+$discard,site=x.com
+$discard,site=tiktok.com
+$discard,site=amazon.com
+$discard,site=amazon.es
+$discard,site=ebay.com
+$discard,site=etsy.com
+$discard,site=yelp.com
+$discard,site=tripadvisor.com
+$discard,site=groupon.com
