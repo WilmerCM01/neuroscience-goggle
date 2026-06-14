@@ -1,0 +1,679 @@
+! name: Neurociencia Profunda | Deep Neuroscience Research
+! description: Goggle completo para el estudio de neurociencia, neuroanatomía, neurofisiología y neuropsicología. Prioriza artículos revisados por pares, atlas cerebrales, institutos de investigación, sociedades científicas y recursos educativos multilingues. Suprime sitios de salud para consumidores y contenido de baja calidad. / Comprehensive goggle boosting peer-reviewed journals, brain atlases, research institutions, neuroinformatics tools, professional societies, and quality educational resources across multiple languages. Suppresses consumer health and low-quality content.
+! public: true
+! author: Deep-Neuroscience-Goggle
+! avatar: #4B0082
+! license: https://creativecommons.org/licenses/by/4.0/deed.en
+! homepage: https://search.brave.com/goggles/discover
+
+$discard
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 1 — GOLD STANDARD: Bases de Datos Primarias / Primary Databases  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Estos son los recursos más fundamentales — cada búsqueda científica
+! en neurociencia comienza y termina aquí.
+
+! PubMed — La base de datos biomédica más importante del mundo
+$boost=10,site=pubmed.ncbi.nlm.nih.gov
+
+! PubMed Central — Acceso gratuito a texto completo (OA)
+$boost=10,site=pmc.ncbi.nlm.nih.gov
+
+! NCBI — National Center for Biotechnology Information (plataforma completa)
+$boost=9,site=ncbi.nlm.nih.gov
+
+! Journal of Neuroscience — Revista insignia de la Society for Neuroscience
+$boost=10,site=jneurosci.org
+
+! Allen Brain Atlas — El atlas cerebral más completo y citado del mundo
+$boost=10,site=brain-map.org
+
+! eLife — Acceso abierto con revisión por pares de alto rigor
+$boost=10,site=elifesciences.org
+
+! Human Connectome Project — Conectividad estructural y funcional cerebral
+$boost=10,site=humanconnectome.org
+
+! BRAIN Initiative NIH — La mayor iniciativa de mapeo cerebral de la historia
+$boost=9,site=braininitiative.nih.gov
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 2 — REVISTAS CIENTÍFICAS PREMIER (rutas específicas de neuro)  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! ─── Nature Portfolio ───
+! Nature Neuroscience — La revista especializada en neuro de mayor impacto
+|https://www.nature.com/neuro^$boost=10
+! Nature Reviews Neuroscience — Revisiones definitivas, imprescindible
+|https://www.nature.com/nrn^$boost=10
+! Nature Reviews Neurology — Neurología clínica con base molecular
+|https://www.nature.com/nrneurol^$boost=9
+! Nature Methods — Metodología esencial para neurociencia experimental
+|https://www.nature.com/nmeth^$boost=9
+! Nature Communications (neuro content)
+|https://www.nature.com/ncomms^$boost=8
+! Molecular Psychiatry (Nature) — Psiquiatría con base neurobiológica
+|https://www.nature.com/mp^$boost=8
+! Translational Psychiatry (Nature)
+|https://www.nature.com/tp^$boost=7
+! Nature (general — dominio completo, boost menor)
+$boost=7,site=nature.com
+
+! ─── Cell Press ───
+! Neuron — La segunda revista más importante en neurociencia básica
+|https://www.cell.com/neuron^$boost=10
+! Trends in Neurosciences — Revisiones de tendencias en neurociencia
+|https://www.cell.com/trends/neurosciences^$boost=9
+! Current Biology — Biología actual con fuerte contenido neuro
+|https://www.cell.com/current-biology^$boost=8
+! Cell Reports — Acceso abierto, descubrimientos de alta calidad
+|https://www.cell.com/cell-reports^$boost=8
+! Cell Reports Methods — Métodos especializados
+|https://www.cell.com/cell-reports-methods^$boost=8
+! Cell (general — dominio completo)
+$boost=7,site=cell.com
+
+! PNAS — Proceedings of the National Academy of Sciences
+$boost=8,site=pnas.org
+
+! Science (AAAS) — Revista general de ciencia de primer nivel
+$boost=8,site=science.org
+
+! ─── The Lancet (rutas específicas) ───
+! Lancet Neurology — Top revista de neurología clínica del mundo
+|https://www.thelancet.com/journals/laneur^$boost=9
+! Lancet Psychiatry
+|https://www.thelancet.com/journals/lanpsy^$boost=8
+! Lancet Digital Health (neuroimagen computacional, AI en neuro)
+|https://www.thelancet.com/journals/landig^$boost=7
+$boost=5,site=thelancet.com
+
+! ─── JAMA Network ───
+! JAMA Neurology — Top revista de neurología clínica
+|https://jamanetwork.com/journals/jamaneurology^$boost=9
+! JAMA Psychiatry
+|https://jamanetwork.com/journals/jamapsychiatry^$boost=8
+$boost=5,site=jamanetwork.com
+
+! ─── NEJM (neurología y neurociencia translacional) ───
+$boost=7,site=nejm.org
+
+! ─── Brain (Oxford) — Premier journal de neurología y neurociencia
+|https://academic.oup.com/brain^$boost=9
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 3 — REVISTAS ESPECIALIZADAS EN NEUROCIENCIA  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! ─── Oxford University Press (OUP) ───
+! Cerebral Cortex — Estructura y función cortical
+|https://academic.oup.com/cercor^$boost=9
+! Neuroscience of Consciousness (OUP)
+|https://academic.oup.com/nc^$boost=8
+! Brain Communications (OUP Open Access)
+|https://academic.oup.com/braincomms^$boost=8
+! Integrative and Comparative Biology
+|https://academic.oup.com/icb^$boost=6
+$boost=6,site=academic.oup.com
+
+! ─── American Physiological Society ───
+! Journal of Neurophysiology — REVISTA CLAVE para neurofisiología
+|https://journals.physiology.org/journal/jn^$boost=9
+! Journal of Physiology (general)
+|https://journals.physiology.org/journal/jphysiol^$boost=8
+$boost=6,site=journals.physiology.org
+
+! ─── Annual Reviews ───
+! Annual Review of Neuroscience — Artículos de revisión más citados
+|https://www.annualreviews.org/journal/neuro^$boost=9
+! Annual Review of Psychology (bases neuropsicológicas)
+|https://www.annualreviews.org/journal/psych^$boost=7
+! Annual Review of Physiology (neurofisiología sistémica)
+|https://www.annualreviews.org/journal/physiol^$boost=7
+$boost=6,site=annualreviews.org
+
+! ─── MIT Press Journals ───
+! Journal of Cognitive Neuroscience — Neuropsicología cognitiva
+|https://direct.mit.edu/jocn^$boost=9
+! Neural Computation — Base computacional de la función neuronal
+|https://direct.mit.edu/neco^$boost=8
+! Network Neuroscience (MIT Press, OA)
+|https://direct.mit.edu/netn^$boost=8
+$boost=6,site=direct.mit.edu
+
+! ─── Frontiers in Neuroscience (familia completa) ───
+! Rutas específicas para los subdiarios más relevantes:
+|https://www.frontiersin.org/journals/neuroscience^$boost=9
+|https://www.frontiersin.org/journals/neuroanatomy^$boost=9
+|https://www.frontiersin.org/journals/neurophysiology^$boost=9
+|https://www.frontiersin.org/journals/human-neuroscience^$boost=9
+|https://www.frontiersin.org/journals/systems-neuroscience^$boost=9
+|https://www.frontiersin.org/journals/molecular-neuroscience^$boost=9
+|https://www.frontiersin.org/journals/cellular-neuroscience^$boost=9
+|https://www.frontiersin.org/journals/neural-circuits^$boost=9
+|https://www.frontiersin.org/journals/computational-neuroscience^$boost=9
+|https://www.frontiersin.org/journals/integrative-neuroscience^$boost=9
+|https://www.frontiersin.org/journals/behavioral-neuroscience^$boost=9
+|https://www.frontiersin.org/journals/aging-neuroscience^$boost=9
+|https://www.frontiersin.org/journals/developmental-neuroscience^$boost=9
+|https://www.frontiersin.org/journals/neurogenetics^$boost=8
+|https://www.frontiersin.org/journals/neurology^$boost=8
+|https://www.frontiersin.org/journals/neurorobotics^$boost=8
+|https://www.frontiersin.org/journals/neuroinformatics^$boost=8
+|https://www.frontiersin.org/journals/neuropharmacology^$boost=8
+|https://www.frontiersin.org/journals/pain-research^$boost=7
+! Boost general del dominio Frontiers
+$boost=7,site=frontiersin.org
+
+! ─── Wiley-Blackwell ───
+! European Journal of Neuroscience — Revista clave para neuro europea
+|https://onlinelibrary.wiley.com/journal/14609568^$boost=9
+! Hippocampus — Memoria, navegación espacial, hipocampo
+|https://onlinelibrary.wiley.com/journal/10981063^$boost=8
+! Journal of Physiology (Wiley/Physiological Society)
+|https://onlinelibrary.wiley.com/journal/14697793^$boost=8
+! Human Brain Mapping — Neuroimagen funcional
+|https://onlinelibrary.wiley.com/journal/10970193^$boost=8
+! Journal of Neuroscience Research
+|https://onlinelibrary.wiley.com/journal/10974547^$boost=8
+! Genes, Brain and Behavior (neuro + genética)
+|https://onlinelibrary.wiley.com/journal/16010000^$boost=7
+$boost=6,site=onlinelibrary.wiley.com
+
+! ─── Springer ───
+! Experimental Brain Research — Investigación experimental clásica
+|https://link.springer.com/journal/221^$boost=8
+! Neuropsychology Review — Revisiones en neuropsicología clínica
+|https://link.springer.com/journal/11065^$boost=8
+! Brain Structure and Function — Neuroanatomía y neuroimagen
+|https://link.springer.com/journal/429^$boost=8
+! Brain Topography — Cartografía eléctrica cerebral
+|https://link.springer.com/journal/10548^$boost=8
+! Brain Imaging and Behavior
+|https://link.springer.com/journal/11682^$boost=8
+! Neurochemical Research (neuroquímica)
+|https://link.springer.com/journal/11064^$boost=7
+$boost=6,site=link.springer.com
+
+! ─── Elsevier / ScienceDirect (múltiples revistas clave) ───
+! NeuroImage — La revista de referencia en neuroimagen
+|https://www.sciencedirect.com/journal/neuroimage^$boost=9
+! Neuropsychologia — Neuropsicología fundamental
+|https://www.sciencedirect.com/journal/neuropsychologia^$boost=9
+! Cortex — Neuropsicología y neurociencia cognitiva
+|https://www.sciencedirect.com/journal/cortex^$boost=9
+! Neuroscience & Biobehavioral Reviews — Síntesis integradoras
+|https://www.sciencedirect.com/journal/neuroscience-and-biobehavioral-reviews^$boost=9
+! Brain and Cognition — Mente y cerebro
+|https://www.sciencedirect.com/journal/brain-and-cognition^$boost=8
+! Behavioural Brain Research — Neurociencia conductual
+|https://www.sciencedirect.com/journal/behavioural-brain-research^$boost=8
+! Brain Research — Neurociencia básica (revista histórica)
+|https://www.sciencedirect.com/journal/brain-research^$boost=8
+! Neuroscience (Elsevier) — Investigación básica
+|https://www.sciencedirect.com/journal/neuroscience^$boost=8
+! Progress in Neurobiology — Revisiones extensas y rigurosas
+|https://www.sciencedirect.com/journal/progress-in-neurobiology^$boost=8
+! Trends in Cognitive Sciences (Elsevier)
+|https://www.sciencedirect.com/journal/trends-in-cognitive-sciences^$boost=8
+! Neuropharmacology
+|https://www.sciencedirect.com/journal/neuropharmacology^$boost=7
+! Neurochemistry International
+|https://www.sciencedirect.com/journal/neurochemistry-international^$boost=7
+! Clinical Neurophysiology — Electrofisiología clínica (EEG, EMG, etc.)
+|https://www.sciencedirect.com/journal/clinical-neurophysiology^$boost=8
+! Electroencephalography (EEG, ERP, oscilaciones)
+|https://www.sciencedirect.com/journal/neuroimage-reports^$boost=7
+! Parkinsonism and Related Disorders
+|https://www.sciencedirect.com/journal/parkinsonism-and-related-disorders^$boost=7
+$boost=6,site=sciencedirect.com
+
+! ─── APA PsycNet — Neuropsicología clínica ───
+$boost=8,site=psycnet.apa.org
+
+! ─── Taylor & Francis ───
+! Cognitive Neuroscience (T&F) — Procesos cognitivos y cerebro
+|https://www.tandfonline.com/journals/pcns20^$boost=8
+! Neuropsychological Rehabilitation — Neuropsicología clínica aplicada
+|https://www.tandfonline.com/journals/pnrh20^$boost=8
+! Applied Neuropsychology: Adult
+|https://www.tandfonline.com/journals/hapn20^$boost=8
+! The Clinical Neuropsychologist — Práctica clínica
+|https://www.tandfonline.com/journals/ntcn20^$boost=8
+$boost=6,site=tandfonline.com
+
+! ─── BMJ Group ───
+! JNNP — Neurología, Neurocirugía y Psiquiatría (clásica revista BMJ)
+|https://jnnp.bmj.com^$boost=8
+$boost=5,site=bmj.com
+
+! ─── American Academy of Neurology ───
+! Neurology — Revista oficial de la AAN
+$boost=8,site=n.neurology.org
+$boost=8,site=neurology.org
+! Neurology: Genetics
+$boost=7,site=ng.neurology.org
+! Neurology: Neuroimmunology
+$boost=7,site=nn.neurology.org
+
+! ─── Otras revistas especializadas importantes ───
+! American Journal of Neuroradiology — Neuroimagen diagnóstica
+$boost=7,site=ajnr.org
+
+! Journal of Neurology (Springer) — Neurología clínica europea
+|https://link.springer.com/journal/415^$boost=8
+
+! Stroke (AHA) — Accidente cerebrovascular y cerebrovascular
+$boost=7,site=ahajournals.org
+
+! Journal of Child Neurology — Neurología pediátrica
+$boost=7,site=journals.sagepub.com
+
+! JoVE — Journal of Visualized Experiments (métodos con video)
+$boost=7,site=jove.com
+
+! Cochrane Database — Revisiones sistemáticas clínicas de neurología
+$boost=8,site=cochranelibrary.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 4 — ATLAS CEREBRALES, BASES DE DATOS Y NEUROINFORMÁTICA  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! Neurosynth — Meta-análisis automatizados de neuroimagen funcional
+$boost=9,site=neurosynth.org
+
+! OpenNeuro — Repositorio abierto de datos de neuroimagen
+$boost=9,site=openneuro.org
+
+! NeuroVault — Mapas de resultados de neuroimagen (acceso abierto)
+$boost=8,site=neurovault.org
+
+! NITRC — Herramientas y recursos de neuroimagen (software y datos)
+$boost=8,site=nitrc.org
+
+! NeuroMorpho.Org — Base de datos de morfología neuronal 3D
+$boost=8,site=neuromorpho.org
+
+! BrainSpan Atlas — Atlas del cerebro humano en desarrollo
+$boost=8,site=brainspan.org
+
+! BigBrain Project — Atlas cerebral de ultra-alta resolución (20 micrones)
+$boost=8,site=bigbrainproject.org
+
+! BrainInfo — Estructura y terminología del cerebro (Univ. Washington)
+$boost=7,site=braininfo.rprc.washington.edu
+
+! BrainMaps.org — Atlas digital de alta resolución (múltiples especies)
+$boost=7,site=brainmaps.org
+
+! INCF — Coordinadora Internacional de Neuroinformática
+$boost=7,site=incf.org
+
+! FreeSurfer — Software gold standard para reconstrucción cortical
+$boost=7,site=freesurfer.net
+
+! FSL (FMRIB Software Library) — Suite de análisis de neuroimagen Oxford
+$boost=7,site=fsl.fmrib.ox.ac.uk
+
+! SPM — Statistical Parametric Mapping (Wellcome / UCL)
+$boost=7,site=fil.ion.ucl.ac.uk
+
+! MNE-Python — Análisis de EEG y MEG
+$boost=7,site=mne.tools
+
+! Nilearn — Machine learning para neuroimagen (Python)
+$boost=7,site=nilearn.github.io
+
+! 3D Slicer — Plataforma de procesamiento de imágenes médicas
+$boost=6,site=slicer.org
+
+! Addgene — Repositorio de plásmidos (vectores virales para optogenética)
+$boost=7,site=addgene.org
+
+! UniProt — Base de datos de proteínas (receptores, canales iónicos neuro)
+$boost=7,site=uniprot.org
+
+! OMIM — Catálogo de genes y enfermedades genéticas (neuro genetics)
+$boost=7,site=omim.org
+
+! GeneCards — Base de datos de genes humanos
+$boost=6,site=genecards.org
+
+! ClinicalTrials.gov — Registro de ensayos clínicos en neurología
+$boost=7,site=clinicaltrials.gov
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 5 — INSTITUCIONES Y LABORATORIOS DE INVESTIGACIÓN  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! ─── NIH / Institutos Nacionales de Salud (EUA) ───
+! NINDS — National Institute of Neurological Disorders and Stroke
+$boost=9,site=ninds.nih.gov
+! NIMH — National Institute of Mental Health
+$boost=8,site=nimh.nih.gov
+! NIA — National Institute on Aging (neurodegeneración)
+$boost=7,site=nia.nih.gov
+! NIDA — National Institute on Drug Abuse (neurobiología adicción)
+$boost=7,site=nida.nih.gov
+! NICHD — Neurología infantil y desarrollo
+$boost=7,site=nichd.nih.gov
+! NIH General — Portal completo
+$boost=7,site=nih.gov
+
+! Allen Institute for Brain Science (Seattle)
+$boost=9,site=alleninstitute.org
+
+! Salk Institute for Biological Studies (La Jolla, CA)
+$boost=8,site=salk.edu
+
+! Janelia Research Campus (HHMI) — Innovación metodológica
+$boost=8,site=janelia.org
+
+! Howard Hughes Medical Institute
+$boost=8,site=hhmi.org
+
+! Max Planck Institute for Brain Research (Frankfurt)
+$boost=8,site=brain.mpg.de
+
+! Max Planck Society (general — múltiples institutos de neuro)
+$boost=7,site=mpg.de
+
+! Human Brain Project (EU Flagship Project)
+$boost=8,site=humanbrainproject.eu
+
+! Blue Brain Project (EPFL, Lausana)
+$boost=8,site=bluebrain.epfl.ch
+
+! Kavli Foundation — Fondo dedicado a neurociencia de la conciencia
+$boost=7,site=kavlifoundation.org
+
+! Simons Foundation / Simons Collaboration on the Global Brain
+$boost=7,site=simonsfoundation.org
+
+! Chan Zuckerberg Initiative — Biología celular y cerebro
+$boost=7,site=chanzuckerberg.com
+
+! Wellcome Trust / Wellcome Sanger Institute
+$boost=7,site=wellcome.org
+
+! EMBL — European Molecular Biology Laboratory
+$boost=7,site=embl.org
+
+! Broad Institute — Genómica y enfermedades cerebrales
+$boost=7,site=broadinstitute.org
+
+! Cold Spring Harbor Laboratory — Neurogénesis, aprendizaje, memoria
+$boost=7,site=cshl.edu
+
+! McGovern Institute for Brain Research (MIT)
+$boost=7,site=mcgovern.mit.edu
+
+! Neuroscience Institute, Princeton
+$boost=7,site=pni.princeton.edu
+
+! Champalimaud Foundation (Lisboa) — Neuroetología, circuitos cerebrales
+$boost=7,site=champalimaud.org
+
+! Institut du Cerveau (ICM, París) — Neurología clínica y básica
+$boost=7,site=icm-institute.org
+
+! German Center for Neurodegenerative Diseases (DZNE)
+$boost=7,site=dzne.de
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 6 — SOCIEDADES PROFESIONALES Y ORGANIZACIONES  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! Society for Neuroscience (SfN) — La sociedad de neurociencia más grande
+$boost=8,site=sfn.org
+
+! Federation of European Neuroscience Societies (FENS)
+$boost=7,site=fens.org
+
+! International Brain Research Organization (IBRO)
+$boost=7,site=ibro.org
+
+! International Neuropsychological Society (INS)
+$boost=7,site=the-ins.org
+
+! American Academy of Neurology (AAN)
+$boost=7,site=aan.com
+
+! European Academy of Neurology (EAN)
+$boost=7,site=ean.org
+
+! National Academy of Neuropsychology (NAN)
+$boost=7,site=nanonline.org
+
+! American Academy of Clinical Neuropsychology (AACN)
+$boost=7,site=theaacn.org
+
+! British Neuroscience Association (BNA)
+$boost=7,site=bna.org.uk
+
+! American Physiological Society (APS)
+$boost=7,site=physiology.org
+
+! Cognitive Neuroscience Society (CNS)
+$boost=7,site=cogneurosociety.org
+
+! Organization for Human Brain Mapping (OHBM)
+$boost=7,site=humanbrainmapping.org
+
+! Society for Psychophysiological Research
+$boost=6,site=sprweb.org
+
+! Behavioral Genetics Association
+$boost=6,site=bga.org
+
+! American Psychological Association
+$boost=6,site=apa.org
+
+! Association for Psychological Science (APS)
+$boost=6,site=psychologicalscience.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 7 — RECURSOS EDUCATIVOS Y LIBROS DE TEXTO  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! Neuroscience Online (UTH) — Libro de texto en línea COMPLETO y GRATUITO
+$boost=9,site=nba.uth.tmc.edu
+
+! BrainFacts.org — Portal de educación pública de la SfN
+$boost=8,site=brainfacts.org
+
+! The Brain from Top to Bottom (McGill Univ.) — Bilingüe EN/FR
+$boost=7,site=thebrain.mcgill.ca
+
+! Scholarpedia — Wikipedia científica revisada por pares (excelente en neuro)
+$boost=7,site=scholarpedia.org
+
+! NCBI Bookshelf — Libros de texto médicos gratuitos (StatPearls, etc.)
+|https://www.ncbi.nlm.nih.gov/books^$boost=8
+
+! HHMI BioInteractive — Materiales educativos de nivel universitario
+$boost=6,site=biointeractive.org
+
+! MIT OpenCourseWare — Cursos completos de neurociencia del MIT
+|https://ocw.mit.edu/*neuro*$boost=8
+|https://ocw.mit.edu/*brain*$boost=8
+$boost=5,site=ocw.mit.edu
+
+! Khan Academy — Neurociencia y biología celular (nivel introductorio)
+|https://www.khanacademy.org/science/biology^$boost=6
+|https://www.khanacademy.org/science/health-and-medicine^$boost=6
+$boost=4,site=khanacademy.org
+
+! Knowing Neurons — Blog experto de divulgación neurocientífica
+$boost=7,site=knowingneurons.com
+
+! Neuroscience for Kids (Univ. Washington) — Educación básica
+$boost=6,site=faculty.washington.edu
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 8 — PREPRINTS Y REPOSITORIOS DE ACCESO ABIERTO  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! bioRxiv — Servidor principal de preprints en ciencias de la vida
+$boost=8,site=biorxiv.org
+
+! medRxiv — Preprints de ciencias médicas
+$boost=7,site=medrxiv.org
+
+! Europe PMC — Equivalente europeo de PubMed Central
+$boost=7,site=europepmc.org
+
+! Zenodo — Repositorio abierto de datos y artículos (CERN)
+$boost=7,site=zenodo.org
+
+! Open Science Framework (OSF) — Prerregistro y datos abiertos
+$boost=6,site=osf.io
+
+! Figshare — Repositorio de datos de investigación
+$boost=6,site=figshare.com
+
+! Directory of Open Access Journals (DOAJ)
+$boost=6,site=doaj.org
+
+! Dryad — Repositorio de datos de investigación
+$boost=6,site=datadryad.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 9 — DIVULGACIÓN CIENTÍFICA DE CALIDAD  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! Neuroscience News — Noticias curadas de neurociencia
+$boost=6,site=neurosciencenews.com
+
+! Scientific American — Mind & Brain (sección de neurociencia)
+|https://www.scientificamerican.com/neuroscience^$boost=7
+|https://www.scientificamerican.com/mind^$boost=7
+$boost=5,site=scientificamerican.com
+
+! Spectrum News (Simons Foundation) — Autismo y neurociencia
+$boost=6,site=spectrumnews.org
+
+! The Brain Prize — Artículos sobre los premiados en neurociencia
+$boost=6,site=thebrainprize.org
+
+! Quanta Magazine — Divulgación rigurosa de neurociencia y biología
+|https://www.quantamagazine.org/*brain*$boost=7
+|https://www.quantamagazine.org/*neuro*$boost=7
+$boost=5,site=quantamagazine.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 10 — FUENTES ACADÉMICAS SECUNDARIAS  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! ResearchGate — Red académica con acceso a artículos
+$boost=6,site=researchgate.net
+
+! Semantic Scholar — Búsqueda académica con AI (Allen AI)
+$boost=6,site=semanticscholar.org
+
+! Academia.edu — Repositorio de preprints y artículos
+$boost=5,site=academia.edu
+
+! Connected Papers — Visualización de grafos de citas
+$boost=5,site=connectedpapers.com
+
+! ─── Wikipedia (rutas específicas de neurociencia) ───
+|https://en.wikipedia.org/wiki/Portal:Neuroscience^$boost=7
+|https://en.wikipedia.org/wiki/Neuroscience^$boost=6
+|https://en.wikipedia.org/wiki/Neuroanatomy^$boost=6
+|https://en.wikipedia.org/wiki/Neurophysiology^$boost=6
+|https://en.wikipedia.org/wiki/Neuropsychology^$boost=6
+|https://en.wikipedia.org/wiki/Cognitive_neuroscience^$boost=6
+|https://en.wikipedia.org/wiki/Computational_neuroscience^$boost=6
+$boost=3,site=en.wikipedia.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  TIER 11 — RECURSOS EN ESPAÑOL Y MULTILINGUES  ████
+! ════════════════════════════════════════════════════════════════════════
+
+! Revista de Neurología — Principal revista en español de neurociencia
+$boost=8,site=neurologia.com
+
+! SciELO — Plataforma de acceso abierto latinoamericana (español/portugués)
+$boost=7,site=scielo.org
+$boost=7,site=scielo.cl
+$boost=7,site=scielo.br
+$boost=6,site=scielo.iics.una.py
+$boost=6,site=scielo.org.mx
+$boost=6,site=scielo.org.co
+
+! Sociedad Española de Neurología (SEN)
+$boost=7,site=sen.es
+
+! Elsevier España — Versiones en español de revistas Elsevier
+$boost=6,site=elsevier.es
+
+! Medigraphic — Literatura médica hispanoamericana
+$boost=6,site=medigraphic.com
+
+! ALAN — Asociación Latinoamericana de Neurociencias
+$boost=6,site=alan-neuro.org
+
+! Revista Chilena de Neuropsicología
+$boost=6,site=neurociencia.cl
+
+! ─── Recursos académicos multilingues de alta calidad ───
+! CNRS — Centre National de la Recherche Scientifique (Francia)
+$boost=7,site=cnrs.fr
+
+! Inserm — Institut National de la Santé (Francia)
+$boost=7,site=inserm.fr
+
+! DFG — German Research Foundation (recursos en alemán e inglés)
+$boost=6,site=dfg.de
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  DOWNRANK — BAJO VALOR ACADÉMICO / SALUD PARA CONSUMIDORES  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Estos sitios pueden aparecer en búsquedas de neurociencia pero no ofrecen
+! rigor científico; se reducen en rango sin eliminar.
+
+$downrank=5,site=webmd.com
+$downrank=5,site=healthline.com
+$downrank=5,site=medicalnewstoday.com
+$downrank=4,site=everydayhealth.com
+$downrank=4,site=verywell.com
+$downrank=4,site=verywellmind.com
+$downrank=4,site=verywellhealth.com
+$downrank=3,site=mayoclinic.org
+$downrank=3,site=psychologytoday.com
+$downrank=3,site=quora.com
+$downrank=2,site=medium.com
+$downrank=2,site=substack.com
+$downrank=2,site=reddit.com
+$downrank=5,site=livestrong.com
+$downrank=5,site=mindbodygreen.com
+$downrank=5,site=healthymindbydesign.com
+$downrank=5,site=wellness.com
+$downrank=4,site=drweil.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  DISCARD — IRRELEVANTES / RUIDO / COMERCIAL / SOCIAL  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Estos sitios nunca aportarán contenido científico relevante
+! y solo generan ruido en búsquedas de neurociencia.
+
+$discard,site=pinterest.com
+$discard,site=pinterest.es
+$discard,site=instagram.com
+$discard,site=facebook.com
+$discard,site=twitter.com
+$discard,site=x.com
+$discard,site=tiktok.com
+$discard,site=amazon.com
+$discard,site=amazon.es
+$discard,site=ebay.com
+$discard,site=etsy.com
+$discard,site=yelp.com
+$discard,site=tripadvisor.com
+$discard,site=booking.com
+$discard,site=groupon.com
