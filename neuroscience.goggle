@@ -1,5 +1,5 @@
-! name: Neurociencia Profunda | Deep Neuroscience Research
-! description: Goggle completo para el estudio de neurociencia, neuroanatomía, neurofisiología y neuropsicología. Prioriza artículos revisados por pares, atlas cerebrales, institutos de investigación, sociedades científicas y recursos educativos multilingues. Suprime sitios de salud para consumidores y contenido de baja calidad. / Comprehensive goggle boosting peer-reviewed journals, brain atlases, research institutions, neuroinformatics tools, professional societies, and quality educational resources across multiple languages. Suppresses consumer health and low-quality content.
+! name: Deep Neuroscience Research
+! description: Comprehensive goggle boosting peer-reviewed journals, brain atlases, research institutions, neuroinformatics tools, professional societies, and quality educational resources across multiple languages. Suppresses consumer health and low-quality content.
 ! public: true
 ! author: WilmerCM
 ! avatar: #4B0082
@@ -652,6 +652,16 @@ $downrank=5,site=mindbodygreen.com
 $downrank=5,site=healthymindbydesign.com
 $downrank=5,site=wellness.com
 $downrank=4,site=drweil.com
+$downrank=5,site=psicologiaamente.com
+$downrank=5,site=mentesabiertaspsicologia.com
+$downrank=5,site=mundopsicologos.com
+$downrank=5,site=webpsicologos.com
+$downrank=4,site=areahumana.es
+$downrank=4,site=somosestupendas.com
+$downrank=4,site=patripsicologa.com
+$downrank=4,site=psicopedia.org
+$downrank=3,site=psicologia-online.com
+$downrank=3,site=emora.es
 
 ! ════════════════════════════════════════════════════════════════════════
 ! ████  DISCARD — IRRELEVANTES / RUIDO / COMERCIAL / SOCIAL  ████
