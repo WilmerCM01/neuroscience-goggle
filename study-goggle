@@ -553,6 +553,9 @@ $discard,site=dmedicina.com
 ! Botiquín — Farmacia/medicamentos para consumidores
 $discard,site=botiquin.com
 
+! EfDeportes — Blog de deportes
+$discard,site=efdeportes.com
+
 ! ════════════════════════════════════════════════════════════════════════
 ! ████  DISCARD — PSEUDOCIENCIA Y NEURO-MISTICISMO EN ESPAÑOL  ████
 ! ════════════════════════════════════════════════════════════════════════
