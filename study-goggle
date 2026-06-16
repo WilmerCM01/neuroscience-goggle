@@ -328,6 +328,7 @@ $boost=9,site=neurowikia.com
 ! Revista de Neurología — Recursos educativos y casos clínicos en español
 ! Artículos de revisión y formación continuada
 $boost=8,site=neurologia.com
+|https://www.imrpress.com/journal/RN^$boost=8
 
 ! Sociedad Española de Neurología — Materiales educativos y guías
 $boost=8,site=sen.es
@@ -630,6 +631,7 @@ $downrank=5,site=livestrong.com
 $downrank=5,site=mindbodygreen.com
 $downrank=4,site=drweil.com
 $downrank=4,site=naturalhealth365.com
+$boost=4,site=imrpress.com
 
 ! ════════════════════════════════════════════════════════════════════════
 ! ████  DISCARD — IRRELEVANTES / RUIDO / REDES SOCIALES  ████
