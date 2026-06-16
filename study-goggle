@@ -1,5 +1,5 @@
 ! name: 🧠 Neurociencia Para Estudiar | Neuroscience Learning Hub
-! description: Study-oriented goggle for neuroscience, neuroanatomy, neurophysiology and neuropsychology. Boosts free textbooks, open university courses, medical education platforms, interactive atlases, peer-reviewed encyclopedias, and pedagogical tools. Downranks raw research, preprints, and consumer health content. Ideal for undergrad, graduate, and health-sciences students.
+! description: Goggle orientado al ESTUDIO (no a la investigación primaria) de neurociencia, neuroanatomía, neurofisiología y neuropsicología. Prioriza libros de texto gratuitos, cursos universitarios abiertos, plataformas de educación médica, recursos interactivos, atlas visuales, enciclopedias revisadas por pares, y herramientas pedagógicas. Rebaja preprints, bases de datos de investigación cruda y sitios de salud para consumidores. Ideal para estudiantes de grado, posgrado, medicina, enfermería, fisioterapia y psicología clínica. Multilingual. / Study-oriented goggle for neuroscience, neuroanatomy, neurophysiology and neuropsychology. Boosts free textbooks, open university courses, medical education platforms, interactive atlases, peer-reviewed encyclopedias, and pedagogical tools. Downranks raw research, preprints, and consumer health content. Ideal for undergrad, graduate, and health-sciences students.
 ! public: true
 ! author: WilmerCM
 ! avatar: #1A6B8A
@@ -270,8 +270,9 @@ $boost=7,site=knowingneurons.com
 ! BrainFacts — Ya listado arriba, boost extra para refuerzo
 $boost=10,site=brainfacts.org
 
-! NeuroPedia — Glosario y explicaciones de términos neurológicos
-$boost=6,site=neuropedia.org
+! Neuroscientifically Challenged — Blog "2-Minute Neuroscience": explicaciones
+! breves y precisas de conceptos básicos y avanzados de neurociencia
+$boost=7,site=neuroscientificallychallenged.com
 
 ! Neuroscience News — Noticias y divulgación con trasfondo pedagógico
 $boost=6,site=neurosciencenews.com
@@ -351,14 +352,9 @@ $boost=6,site=elsevier.es
 ! Medigraphic — Literatura médica hispanoamericana peer-reviewed
 $boost=6,site=medigraphic.com
 
-! Anatomia Online — Recursos de anatomía en español
-$boost=6,site=anatomiaonline.com
-
-! Educación Médica (Elsevier España) — Pedagogía en ciencias de la salud
-$boost=6,site=educacionmedica.net
-
-! FEPAMM / Neurología Latinoamérica
-$boost=6,site=alan-neuro.org
+! Learn Medical Neuroscience (Amsterdam UMC) — Neuroanatomía con atlas,
+! disecciones, casos clínicos, reconstrucciones 3D y MRI educativa
+$boost=7,site=learnmedicalneuroscience.nl
 
 ! Universidad de Navarra — Departamento de Neurociencias (recursos ESP)
 $boost=6,site=unav.edu
@@ -421,9 +417,6 @@ $boost=7,site=nanonline.org
 ! International Neuropsychological Society — Recursos educativos
 $boost=7,site=the-ins.org
 
-! Neuropsychology Central — Recursos para el estudio neuropsicológico
-$boost=6,site=neuropsychologycentral.com
-
 ! Association for Psychological Science
 $boost=6,site=psychologicalscience.org
 
@@ -445,9 +438,6 @@ $boost=7,site=physionet.org
 
 ! The Physiology Society (UK) — Recursos educativos de fisiología
 $boost=7,site=physoc.org
-
-! Virtual Physiology — Simuladores de fisiología para el aprendizaje
-$boost=7,site=virtual-physiology.com
 
 ! GetBodySmart — Neuronas, sinapsis, potenciales de acción (animaciones)
 ! Ya listado arriba, boost específico de refuerzo
@@ -475,6 +465,114 @@ $boost=4,site=discovermagazine.com
 
 ! Brainfacts News — Noticias con base neurocientífica de la SfN
 $boost=7,site=brainfacts.org
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  DOWNRANK — DIVULGACIÓN POPULAR EN ESPAÑOL (bajo rigor)  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Sitios que mezclan contenido legítimo con autoayuda, pop-psychology
+! o información no verificada. Aparecen mucho en búsquedas de neuro
+! en español y no aportan rigor académico suficiente para el estudio.
+
+! Psicología y Mente — Popular, mezcla ciencia con autoayuda y pop-psych
+$downrank=3,site=psicologiaymente.com
+
+! Psicología Online — Calidad variable, más clínica que neurocientífica
+$downrank=3,site=psicologia-online.com
+
+! WebConsultas — Salud para consumidores en español (sin rigor académico)
+$downrank=4,site=webconsultas.com
+
+! Bekia Salud — Contenido de estilo de vida y salud para consumidores
+$downrank=4,site=bekia.es
+
+! Vitónica — Fitness y bienestar; aparece en búsquedas de neuro y ejercicio
+$downrank=4,site=vitonica.com
+
+! Diario Femenino — Revista de estilo de vida; bajo contenido científico
+$downrank=4,site=diariofemenino.com
+
+! Consumer.es — Organización de consumidores; algo de calidad pero no académico
+$downrank=3,site=consumer.es
+
+! Sanitas — Aseguradora de salud; información médica para consumidores
+$downrank=4,site=sanitas.es
+
+! Mapfre — Aseguradora con sección de salud para consumidores
+$downrank=4,site=mapfre.com
+
+! Clínicas dentales/médicas directorio — No tiene contenido académico
+$downrank=4,site=topclinics.es
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  DISCARD — GRANJAS DE CONTENIDO Y RUIDO EN ESPAÑOL  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Sitios de contenido SEO masivo que aparecen en búsquedas de neurociencia
+! en español pero no ofrecen valor académico. Muchos son content farms
+! sin autoría experta, sin referencias, y con errores frecuentes.
+
+! Lifeder.com — Content farm masiva en español; artículos sin rigor científico
+$discard,site=lifeder.com
+
+! Caracteristicas.co — Content farm: "características de X" sin base académica
+$discard,site=caracteristicas.co
+
+! Diferencias.eu — Content farm: "diferencias entre X e Y" superficiales
+$discard,site=diferencias.eu
+
+! Significados.com — Content farm: definiciones superficiales sin referencias
+$discard,site=significados.com
+
+! Ejemplos.co — Content farm: listas de ejemplos sin base académica
+$discard,site=ejemplos.co
+
+! MundoPsicologos — Directorio de terapeutas, no recurso educativo
+$discard,site=mundopsicologos.com
+$discard,site=mundopsicologos.com.ar
+$discard,site=mundopsicologos.es
+
+! TuOtroMédico — Salud para consumidores, sin rigor académico
+$discard,site=tuotromedico.com
+
+! CuidatePlus (Marca) — Sección de salud de periódico deportivo
+$discard,site=cuidateplus.marca.com
+
+! TuSíntomas — Checker de síntomas sin base académica
+$discard,site=tusintomas.com
+
+! SaludyMedicinas MX — Consumidor México, sin base científica
+$discard,site=saludymedicinas.com.mx
+
+! Onmeda.es — Salud para consumidores; redirecciones y contenido superficial
+$discard,site=onmeda.es
+
+! DMedicina — Portal de salud para consumidores (El Mundo)
+$discard,site=dmedicina.com
+
+! Botiquín — Farmacia/medicamentos para consumidores
+$discard,site=botiquin.com
+
+! ════════════════════════════════════════════════════════════════════════
+! ████  DISCARD — PSEUDOCIENCIA Y NEURO-MISTICISMO EN ESPAÑOL  ████
+! ════════════════════════════════════════════════════════════════════════
+!
+! Sitios que usan terminología neurocientífica de forma engañosa para
+! vender pseudoterapias, coaching "neuro", o contenido esotérico.
+! Aparecen en búsquedas de "neurociencia" y "neuropsicología".
+
+! Programación Neurolingüística — Pseudociencia disfrazada de neurociencia
+$discard,site=pnlhoy.com
+$discard,site=pnlconinteligencia.com
+$discard,site=institutopnl.es
+
+! Neurofeedback pseudocientífico y biohacking sin evidencia
+$discard,site=neurofeedbacknorte.es
+$discard,site=biohackingspain.com
+
+! Natursan / NaturVida — Naturismo mezclado con pseudo-neurociencia
+$discard,site=natursan.net
+$discard,site=naturvida.net
 
 ! ════════════════════════════════════════════════════════════════════════
 ! ████  DOWNRANK — INVESTIGACIÓN PRIMARIA (Menos útil para estudiar)  ████
@@ -548,4 +646,3 @@ $discard,site=etsy.com
 $discard,site=yelp.com
 $discard,site=tripadvisor.com
 $discard,site=groupon.com
-$discard,site=efdeportes.com
